@@ -1,0 +1,405 @@
+<!DOCTYPcdE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Тестовая верстка страницы">
+<!--    <link href="style.css" rel="stylesheet" type="text/css">-->
+    <style>
+        .header_div {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .a_logo {
+            margin-left:40px;
+            margin-top: 31px;
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        .navigation_div{
+            justify-content: center;
+            -webkit-flex: auto;
+        }
+
+        .navigation{
+            margin-top: 35px;
+            width: 293px;
+            float: right;
+            display: flex;
+        }
+        .nav_1{
+            margin-right: 30px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .nav_2{
+            margin-right: 30px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .nav_3{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .button{
+            margin-top: 23px;
+            margin-right:40px;
+            width: 106px;
+            height: 43px;
+            right: 40px;
+            top: 23px;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid rgba(27, 27, 27, 0.4);
+            box-sizing: border-box;
+            border-radius: 6px;
+        }
+
+        .button_text{
+            left: 28.3%;
+            right: 28.3%;
+            top: 27.91%;
+            bottom: 27.91%
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #1B1B1B;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 0px 10px;
+        }
+
+        .sec_1_img{
+            margin-top: 116px;
+            text-align: center;
+        }
+
+        .h_1{
+            margin-top: 60px;
+            margin-bottom: 0px;
+            height: 77px;
+            text-align: center;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 64px;
+        }
+
+        .p_sec_1{
+            display: flex;
+            justify-content: center;
+        }
+
+        .main_text{
+            width: 925px;
+            height: 105px;
+            margin-top: 30px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 147.3%;
+            text-align: center;
+            color: #1B1B1B;
+        }
+
+        .section_2{
+            margin-top: 80px;
+            height: 341px;
+            background: #F7F9FB;
+        }
+
+        .h_2{
+            margin-top: 80px;
+            padding-top: 80px;
+            margin-bottom: 43px ;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 120%;
+            text-align: center;
+        }
+
+        .div_mail_phone{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .head_e_mail{
+            flex: auto;
+            border-right: 1px solid;
+            border-right-color: #C8C8CF;
+        }
+
+        .e_mail_div_1{
+            margin-right: 69px;
+            padding-right: 75PX;
+            text-align: right;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 147.3%;
+            color: #4F4F4F;
+        }
+
+        .e_mail_div_2{
+            margin-top: 6px;
+            margin-right: 69px;
+            padding-right: 35px;
+            text-align: right;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 147.3%;
+            color: #000000;
+        }
+
+        .head_phone{
+            flex: auto;
+        }
+
+        .phone_div_1{
+            margin-left: 69px;
+            padding-left: 75PX;
+            text-align: left;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 147.3%;
+            color: #4F4F4F;
+        }
+
+        .phone_div_2{
+            margin-top: 6px;
+            margin-left: 69px;
+            padding-left: 35px;
+            text-align: left;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 147.3%;
+            color: #000000;
+        }
+
+
+
+        .h_2_1{
+            margin-top: 80px;
+            margin-bottom: 55px;
+
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 120%;
+            text-align: center;
+        }
+
+        .team{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .team_person{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            width: 25%;
+        }
+
+        .space_div_team{
+            height: 55px;
+        }
+
+        .fio_text{
+            margin-top: 23px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 147.3%;
+            color: #000000;
+        }
+
+        .position_text{
+            margin-top: 8px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 147.3%;
+            color: #828282;
+        }
+        .main_footer{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            text-align: center;
+            height: 124px;
+            margin-top: 120px;
+
+            background: #3F3D56;
+
+        }
+        .copyright_div{
+            margin-top: 53px;
+            margin-left: 40px;
+            text-align: left;
+            width: 50%;
+
+        }
+
+        .social_image{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            margin-top: 48.72px;
+            margin-right: 42.67px;
+            width: 92px;
+
+        }
+
+        .copyright{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+        .social_ico{
+            width: 26.67px;
+            height: 26.67px;
+        }
+    </style>
+    <title>SkillDrive | О нас</title>
+</head>
+<body>
+<header>
+   <div class="header_div">
+       <div class="logo_div">
+           <div class="a_logo">
+               <a href=""><img src="src\skilldrive.svg"  alt="SkillDrive"></a>
+           </div>
+       </div>
+       <div class="navigation_div">
+           <nav class="navigation">
+               <span class="nav_1"><a href="">О нас</a></span>
+               <span class="nav_2"><a href="">Условия</a></span>
+               <span class="nav_3"><a href="">Частые вопросы</a></span>
+           </nav>
+       </div>
+       <div class="button_div">
+           <button class="button"><a class="button_text">Войти</a></button>
+       </div>
+   </div>
+</header>
+<main>
+        <section class="section_1">
+            <div class="sec_1_img"><a><img src="src/team.svg" alt="Наша команда"></a></div>
+            <div class="div_h_1"><div class="h_1">О нас</div></div>
+            <div class="p_sec_1">
+            <div class="main_text">Это учебный проект, созданный с целью получения боевого опыта в разработке настоящего живого веб-приложения. Этот сервис имитирует работу каршеринга, в котором можно не только арендовать автомобили, но и сдавать их в аренду.
+            </div>
+            </div>
+        </section>
+        <section class="section_2">
+            <div class="div_h_2"><div class="h_2">Контакты</div></div>
+            <div class="div_mail_phone">
+                <div class="head_e_mail">
+                    <div class="e_mail_div_1">
+                        <a class="e_mail_1">Электронная почта</a>
+                    </div>
+                    <div class="e_mail_div_2">
+                        <a class="e_mail_2">drive@skillfactory.com</a>
+                    </div>
+                </div>
+                <div class="head_phone">
+                    <div class="phone_div_1">
+                        <a class="phone_1">Телефон</a>
+                    </div>
+                    <div class="phone_div_2">
+                        <a class="phone_2">+7 912 123-45-67</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="section_3">
+            <div class="div_h_2_team"><div class="h_2_1">Команда</div></div>
+            <div class="team">
+                <div class="team_person">
+                    <a><img src="src/Ellipse%209.png" alt="Фото Генерального директора"></a>
+                    <a class="fio_text">Иван Иванов</a>
+                    <a class="position_text">CEO</a>
+                </div>
+                <div class="team_person">
+                    <a><img src="src/Ellipse%2010.png" alt="Фото нашего Frontend-разработчика"></a>
+                    <a class="fio_text">Алексей Смирнов</a>
+                    <a class="position_text">Frontend-разработчик</a>
+                </div>
+                <div class="team_person">
+                    <a> <img src="src/Ellipse%2011.png" alt="Фото нашего Backend-разработчика"></a>
+                    <a class="fio_text">Денис Ярцев</a>
+                    <a class="position_text">Backend-разработчик</a>
+                </div>
+                <div class="team_person">
+                    <a><img src="src/Ellipse%2012.png" alt="Фото нашего дизайнера"></a>
+                    <a class="fio_text">Николай Морозов</a>
+                    <a class="position_text">Дизайнер</a>
+                </div>
+            </div>
+            <div class="space_div_team"></div>
+            <div class="team">
+                <div class="team_person"></div>
+                <div class="team_person">
+                    <a><img src="src/Ellipse%2013.png" alt="Фото нашего копирайтера"></a>
+                    <a class="fio_text">Ирина Деева</a>
+                    <a class="position_text">Копирайтер</a>
+                </div>
+                <div class="team_person">
+                    <a><img src="src/Ellipse%2014.png" alt="Фото нашего SMM специалиста"></a>
+                    <a class="fio_text">Ирина Деева</a>
+                    <a class="position_text">SMM</a>
+                </div>
+                <div class="team_person"></div>
+            </div>
+        </section>
+</main>
+<footer class="main_footer">
+    <div class="copyright_div"><a class="copyright"> © iSkillDrive Inc. 2021 </a></div>
+    <div class="social_image">
+        <div class="social_ico"><a href="http://www.facebook.com"><img src='src/Facebook.png' alt="FaceBook" /></a></div>
+        <div class="social_ico"><a href="https://www.instagram.com/"><img src='src/Instagram.png' alt="Instagramm" /></a></div>
+        <div class="social_ico"><a href="https://vk.com/feed"><img src='src/VK.png' alt="Vkontakte" /></a></div>
+    </div>
+</footer>
+</body>
+</html>
